@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  highligtColor = 'white';
 
-
+  highligt(color: string) {
+    this.highligtColor = color;
+  }
 }

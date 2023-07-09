@@ -1,5 +1,31 @@
 <h1>ANGULAR Directives</h1>
-<p>Instructions in the DOM</p>
-
 
 <h2>Attribute directives</h2>
+<ul>
+  <li>Modify properties of the DOM.</li>
+</ul>
+
+<h3>ngClass</h3>
+
+<div class="example">
+  <div class="box vertical">
+    <div>
+      <button 
+        class="success" 
+        (click)="highligt('green')">
+        Sucess
+      </button>
+        <button 
+        class="danger" 
+        (click)="highligt('red')">
+        Danger
+      </button>
+        <button 
+        class="info" 
+        (click)="highligt('blue')">
+        Info
+      </button>
+      <p [ngClass]="{}">Click any button to highlight me!</p>
+    </div>
+  </div>
+</div>
