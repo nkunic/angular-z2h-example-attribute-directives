@@ -6,6 +6,9 @@
 </ul>
 
 <h3>ngClass</h3>
+<ul>
+  <li>Adds class to the DOM element.</li>
+</ul>
 
 <div class="example">
   <div class="box vertical">
@@ -23,5 +26,23 @@
         Click any button to highlight me!
       </p>
     </div>
+  </div>
+</div>
+
+<h3>ngStyle</h3>
+<ul>
+  <li>Modify the style of the DOMelement.</li>
+</ul>
+<div class="example">
+  <div class="box vertical">
+    <button class="success" (click)="toggleStyle()">toggleStyle</button>
+    <p
+      [ngStyle]="{
+        color: isStyleApplied === true ? 'white' : 'black',
+        backgroundColor: isStyleApplied ? 'green' : 'white'
+      }"
+    >
+      Click the button to highlight the style!
+    </p>
   </div>
 </div>
