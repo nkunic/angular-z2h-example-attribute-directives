@@ -32,15 +32,24 @@
 button + button {
   margin-left: 1rem;
 }
-
+button {
+  color: white;
+}
 .success {
   background-color: green;
 }
-
 .danger {
   background-color: red;
 }
-
 .info {
   background-color: blue;
+}
+.green {
+  color: green;
+}
+.red-color {
+  color: red;
+}
+.blue {
+  color: blue;
 }
